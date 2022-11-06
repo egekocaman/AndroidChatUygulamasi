@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+    <ImageView
+        android:id="@+id/giris_resmi"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/people"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        />
+
+            <EditText
+                android:id="@+id/giris_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/giris_resmi"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/girdiler"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:hint="Email Adresiniz..."
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textSize="25sp" />
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/giris_sifre"
+                android:layout_below="@id/giris_email"
+                android:layout_alignParentStart="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/girdiler"
+                android:hint="Şifreniz..."
+                android:textSize="25sp"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/sifre_unutma_baglantisi"
+                android:layout_below="@id/giris_sifre"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="textEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Şifremi Unuttum..."
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:id="@+id/giris_butonu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sifre_unutma_baglantisi"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/buttonlar"
+                android:padding="8dp"
+                android:text="Giriş Yap"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                />
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/yeni_hesap_alma"
+                android:layout_below="@id/giris_butonu"
+                android:layout_alignParentEnd="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hesabınız Yok mu?"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="10dp"
+                />
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
