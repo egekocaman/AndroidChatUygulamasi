@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyarlarActivity">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/profil_resmi_ayarla"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:src="@drawable/profil_resmi"
+    app:civ_border_color="@color/white"
+    app:civ_border_width="5dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp">
+
+</de.hdodenhof.circleimageview.CircleImageView>
+
+
+    <EditText
+        android:id="@+id/kullanici_adi_ayarla"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/profil_resmi_ayarla"
+        android:layout_marginTop="12dp"
+        android:inputType="textMultiLine"
+        android:hint="Kullanci Adi"
+        android:textAlignment="center"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:textStyle="bold"
+        android:background="@color/teal_700"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="4dp"/>
+
+
+    <EditText
+        android:id="@+id/profil_durumu_ayarla"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/kullanici_adi_ayarla"
+        android:inputType="textMultiLine"
+        android:hint="Kullanci Durumu"
+        android:textAlignment="center"
+        android:drawableStart="@drawable/ic_baseline_event_note_24"
+        android:textStyle="bold"
+        android:background="@color/teal_700"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="4dp"/>
+
+
+    <Button
+        android:id="@+id/ayarları_guncelle_buttonu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/profil_durumu_ayarla"
+        android:inputType="textMultiLine"
+        android:text="GÜNCELLE"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="@color/teal_700"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="4dp"
+        android:textAllCaps="false"/>
+
+
+
+</RelativeLayout>
