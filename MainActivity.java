@@ -132,6 +132,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (item.getItemId()==R.id.ana_arkadas_bulma_secenegi)
         {
+            Intent arkadasBul = new Intent(MainActivity.this,ArkadasBulActivity.class);
+            startActivity(arkadasBul);
 
         }
 
